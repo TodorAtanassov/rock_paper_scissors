@@ -11,16 +11,16 @@ while play:
      "P" for Paper,
      "S" for scissors and
      "Stop" to end the game. \n''').lower()
-    if c_choice == 'stop':
-        play = False
-        print('Game is terminated!')
-    elif c_choice == 'R' and h_choice == 'r':
-        print(f'''You:Rock -- AI: Rock
+    if h_choice == 'stop':
+        break
+print('Game is terminated!')
+if c_choice == 'R' and h_choice == 'r':
+    print(f'''You:Rock -- AI: Rock
             DRAW
             You:{h_score} --- AI:{c_score}''')
-    elif c_choice == 'S' and h_choice == 's':
-        print('''You:Scissors -- AI: Scissors
+elif c_choice == 'S' and h_choice == 's':
+    print('''You:Scissors -- AI: Scissors
                 DRAW''')
-    elif c_choice == 'P' and h_choice == 'p':
-        print('''You:Paper -- AI: Paper
+elif c_choice == 'P' and h_choice == 'p':
+    print('''You:Paper -- AI: Paper
              DRAW''')
