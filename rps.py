@@ -26,7 +26,7 @@ elif c_choice == 'p' and u_choice == 'p':
              DRAW''')
 elif c_choice == 'p' and u_choice == 'r':
     c_score += 1
-    print('''You:Paper -- AI: Paper
+    print('''You:Paper -- AI: Rock
              AI WINS''')
 
 
