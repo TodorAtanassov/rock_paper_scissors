@@ -13,9 +13,7 @@ while play:
      "Stop" to end the game. \n''').lower()
     if c_choice == 'stop':
         break
-elif c_choice = 3 or u_choice = 3:
-    break
-print('Game is terminated!')
+    print('Game is terminated!')
 if u_choice == 'r' and c_choice == 'r':
     print(f'''You:Rock -- AI: Rock
             DRAW
@@ -40,5 +38,13 @@ elif u_choice == 'p' and c_choice == 's':
              AI WINS''')
 elif u_choice == 's' and c_choice == 'p':
     u_score += 1
-    print('''You: Paper -- AI: Scissors
+    print('''You: Scissors -- AI: Paper
+             YOU WIN''')
+elif u_choice == 's' and c_choice == 'p':
+    u_score += 1
+    print('''You: Scissors -- AI: Paper
+             YOU WIN''')
+elif u_choice == 's' and c_choice == 'p':
+    u_score += 1
+    print('''You: Scissors -- AI: Paper
              YOU WIN''')
