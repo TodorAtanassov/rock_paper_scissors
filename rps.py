@@ -11,7 +11,7 @@ while play:
      "P" for Paper,
      "S" for scissors and
      "Stop" to end the game. \n''').lower()
-    if c_choice == 'stop':
+    if u_choice == 'stop':
         break
 print('Game is terminated!')
 if u_choice == 'r' and c_choice == 'r':
