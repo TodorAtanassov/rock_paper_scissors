@@ -40,11 +40,11 @@ elif u_choice == 's' and c_choice == 'p':
     u_score += 1
     print('''You: Scissors -- AI: Paper
              YOU WIN''')
-elif u_choice == 's' and c_choice == 'p':
+elif u_choice == 'p' and c_choice == 'r':
     u_score += 1
-    print('''You: Scissors -- AI: Paper
+    print('''You: Paper -- AI: Rock
              YOU WIN''')
-elif u_choice == 's' and c_choice == 'p':
+elif u_choice == 'r' and c_choice == 's':
     u_score += 1
-    print('''You: Scissors -- AI: Paper
+    print('''You: Rock -- AI: Scissors
              YOU WIN''')
