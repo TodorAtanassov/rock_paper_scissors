@@ -13,7 +13,7 @@ while play:
      "Stop" to end the game. \n''').lower()
     if c_choice == 'stop':
         break
-    print('Game is terminated!')
+print('Game is terminated!')
 if u_choice == 'r' and c_choice == 'r':
     print(f'''You:Rock -- AI: Rock
             DRAW
