@@ -19,41 +19,41 @@ while play:
                 DRAW
                 You:{u_score} --- AI:{c_score}''')
     elif u_choice == 's' and c_choice == 's':
-        print('''You:Scissors -- AI: Scissors
+        print(f'''You:Scissors -- AI: Scissors
                     DRAW
                      You:{u_score} --- AI:{c_score}''')
     elif u_choice == 'p' and c_choice == 'p':
-        print('''You:Paper -- AI: Paper
+        print(f'''You:Paper -- AI: Paper
                  DRAW
                   You:{u_score} --- AI:{c_score}''')
     elif u_choice == 'r' and c_choice == 'p':
         c_score += 1
-        print('''You: Rock -- AI: Paper
+        print(f'''You: Rock -- AI: Paper
                  AI WINS
                   You:{u_score} --- AI:{c_score}''')
     elif u_choice == 's' and c_choice == 'r':
         c_score += 1
-        print('''You: Scissors -- AI: Rock
+        print(f'''You: Scissors -- AI: Rock
                  AI WINS
                   You:{u_score} --- AI:{c_score}''')
     elif u_choice == 'p' and c_choice == 's':
         c_score += 1
-        print('''You: Paper -- AI: Scissors
+        print(f'''You: Paper -- AI: Scissors
                  AI WINS
                   You:{u_score} --- AI:{c_score}''')
     elif u_choice == 's' and c_choice == 'p':
         u_score += 1
-        print('''You: Scissors -- AI: Paper
+        print(f'''You: Scissors -- AI: Paper
                  YOU WIN
                   You:{u_score} --- AI:{c_score}''')
     elif u_choice == 'p' and c_choice == 'r':
         u_score += 1
-        print('''You: Paper -- AI: Rock
+        print(f'''You: Paper -- AI: Rock
                  YOU WIN
                   You:{u_score} --- AI:{c_score}''')
     elif u_choice == 'r' and c_choice == 's':
         u_score += 1
-        print('''You: Rock -- AI: Scissors
+        print(f'''You: Rock -- AI: Scissors
                  YOU WIN
                   You:{u_score} --- AI:{c_score}''')
 
