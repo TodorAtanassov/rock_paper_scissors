@@ -56,13 +56,9 @@ while play:
         print(f'''You: Rock -- AI: Scissors
                  YOU WIN
                   You:{u_score} --- AI:{c_score}''')
-
     if u_choice == 'stop':
         break
         print('Game is terminated!')
-    elif c_score == 3:
+    if c_score == 3 or u_score == 3:
         break
-        print('AI WINS!')
-    elif u_score == 3:
-        break
-        print('YOU WIN!')
+print(f'Result: YOU({u_score}) -- ({c_score})')
