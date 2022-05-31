@@ -6,7 +6,9 @@ c_score = 0
 u_score = 0
 choices = ['r', 'p', 's']
 
+print('Press "enter" to start the game.\n '
 
+      )
 u_choice = input('''type "R" for Rock,
      "P" for Paper,
      "S" for scissors and
@@ -61,4 +63,5 @@ while play:
         print('Game is terminated!')
     if c_score == 3 or u_score == 3:
         break
-print(f'Result: YOU({u_score}) -- ({c_score})')
+print(f'''           GAME OVER!
+        Result: YOU ({u_score}) -- AI ({c_score})''')
