@@ -4,15 +4,15 @@ import random
 play = True
 c_score = 0
 u_score = 0
-choices = ['r', 'p', 's']
+choices = ['Rock', 'Paper', 'Scissors']
 
-print('Press "enter" to start the game.\n '
 
-      )
 u_choice = input('''type "R" for Rock,
      "P" for Paper,
      "S" for scissors and
-     "Stop" to end the game. \n''').lower()
+     "Stop" to end the game.
+     
+    'Press "enter" to start the game.\n''').lower()
 while play:
     c_choice = random.choice(choices)
     u_choice = input('>')
