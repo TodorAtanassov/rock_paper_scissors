@@ -4,7 +4,7 @@ import random
 play = True
 c_score = 0
 u_score = 0
-choices = ['Rock', 'Paper', 'Scissors']
+choices = ['R', 'P', 'S']
 
 
 u_choice = input('''type "R" for Rock,
@@ -12,44 +12,35 @@ u_choice = input('''type "R" for Rock,
      "S" for scissors and
      "Stop" to end the game.
      
-    'Press "enter" to start the game.\n''').lower()
+    'Press "enter" to start the game.\n''').upper()
 while play:
     c_choice = random.choice(choices)
-    u_choice = input('>')
+    u_choice = input('>').upper()
     if u_choice == c_choice:
-        print(f'''You:{u_choice} -- AI: {c_choice}
-                DRAW
+        print(f'''AI: chose :{c_choice}
+                         DRAW
                 You:{u_score} --- AI:{c_score}''')
-    elif u_choice == 'r' and c_choice == 'p':
+    elif u_choice == 'R' and c_choice == 'P':
         c_score += 1
-        print(f'''You: Rock -- AI: Paper
+        print(f'''AI: Paper
                  AI WINS
                   You:{u_score} --- AI:{c_score}''')
-    elif u_choice == 's' and c_choice == 'r':
+    elif u_choice == 'S' and c_choice == 'R':
         c_score += 1
-        print(f'''You: Scissors -- AI: Rock
+        print(f'''AI: Rock
                  AI WINS
                   You:{u_score} --- AI:{c_score}''')
-    elif u_choice == 'p' and c_choice == 's':
+    elif u_choice == 'P' and c_choice == 'S':
         c_score += 1
-        print(f'''You: Paper -- AI: Scissors
+        print(f'''AI: Scissors
                  AI WINS
                   You:{u_score} --- AI:{c_score}''')
-    elif u_choice == 's' and c_choice == 'p':
+    else:
         u_score += 1
-        print(f'''You: Scissors -- AI: Paper
-                 YOU WIN
+        print(f'''AI: {c_choice}
+                     YOU WIN
                   You:{u_score} --- AI:{c_score}''')
-    elif u_choice == 'p' and c_choice == 'r':
-        u_score += 1
-        print(f'''You: Paper -- AI: Rock
-                 YOU WIN
-                  You:{u_score} --- AI:{c_score}''')
-    elif u_choice == 'r' and c_choice == 's':
-        u_score += 1
-        print(f'''You: Rock -- AI: Scissors
-                 YOU WIN
-                  You:{u_score} --- AI:{c_score}''')
+
     if u_choice == 'stop':
         break
         print('Game is terminated!')
