@@ -6,7 +6,6 @@ c_score = 0
 u_score = 0
 choices = ['R', 'P', 'S']
 
-
 u_choice = input('''type "R" for Rock,
      "P" for Paper,
      "S" for scissors and
