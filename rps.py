@@ -6,6 +6,12 @@ c_score = 0
 u_score = 0
 choices = ['R', 'P', 'S']
 
+ch = {
+    'R': 'Rock',
+    'P': 'Paper',
+    'S': 'Scissors'
+}
+
 u_choice = input('''type "R" for Rock,
      "P" for Paper,
      "S" for scissors and
@@ -46,4 +52,3 @@ while play:
         break
 print(f'''           GAME OVER!
         Result: YOU ({u_score}) -- AI ({c_score})''')
-
