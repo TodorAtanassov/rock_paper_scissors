@@ -16,18 +16,10 @@ u_choice = input('''type "R" for Rock,
 while play:
     c_choice = random.choice(choices)
     u_choice = input('>')
-    if u_choice == 'r' and c_choice == 'r':
-        print(f'''You:Rock -- AI: Rock
+    if u_choice == c_choice:
+        print(f'''You:{u_choice} -- AI: {c_choice}
                 DRAW
                 You:{u_score} --- AI:{c_score}''')
-    elif u_choice == 's' and c_choice == 's':
-        print(f'''You:Scissors -- AI: Scissors
-                    DRAW
-                     You:{u_score} --- AI:{c_score}''')
-    elif u_choice == 'p' and c_choice == 'p':
-        print(f'''You:Paper -- AI: Paper
-                 DRAW
-                  You:{u_score} --- AI:{c_score}''')
     elif u_choice == 'r' and c_choice == 'p':
         c_score += 1
         print(f'''You: Rock -- AI: Paper
