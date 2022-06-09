@@ -40,7 +40,6 @@ while play:
         print(f'''AI: {c_choice}
                      YOU WIN
                   You:{u_score} --- AI:{c_score}''')
-
     if u_choice == 'stop':
         break
         print('Game is terminated!')
